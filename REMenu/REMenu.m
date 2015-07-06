@@ -183,9 +183,8 @@
         [button addTarget:self action:@selector(close) forControlEvents:UIControlEventTouchUpInside];
         button;
     });
-
-    //FIXME: Quick hack for iOS 8 compatibility when `prefersStatusBarHidden` returns YES in UIViewController.
-    CGFloat navigationBarOffset = self.appearsBehindNavigationBar && self.navigationBar ? 44 : 0;
+    
+    CGFloat navigationBarOffset = self.appearsBehindNavigationBar && self.navigationBar ? 64 : 0;
     
     // Append new item views to REMenuView
     //
